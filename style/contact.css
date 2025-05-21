@@ -1,0 +1,47 @@
+body{
+  background-image: url("/images/2.jpg");
+}
+#contact {
+    max-width: 600px;
+    margin-top: 3%;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 3%;
+    padding: 2rem;
+    background: transparent;
+    border-radius: 50px;
+    border: 1px solid black;
+  }
+  
+  #contact h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  form label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 0.3rem;
+  }
+  
+  form button {
+    margin-top: 1rem;
+    padding: 0.8rem 2rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #0056b3;
+  }

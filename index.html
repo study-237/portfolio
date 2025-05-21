@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/nav.css">
+    <link rel="stylesheet" href="style/footer.css">
+<body>
+    <nav>
+        <div class="logo">
+          <img src="images/moi.JPG" alt="Photo de profil" />
+          <span>pouokam pierre</span>
+        </div>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+        <div class="menu" id="menu">
+          <a href="#accueil">Accueil</a>
+          <a href="cv.html">mon CV</a>
+          <a href="grid.html">mon grid photo</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    <section class="page-content">
+        <header>
+            <h2> hey, je suis un developpeur et expert en cybersecurite</h2>
+            <p>
+               je suis pouokam pierre, jeune étudiant à l'université de Douala, je suis en
+               faculté des sciences, département de math-informatique. je suis un passionné de 
+               l'informatique et de l'ingenierie car ce sont les domaines qui se rapproche le plus de 
+               la magie.Au vu de ma passion pour l'ingenierie et l'informatique, je me donne vraiment
+               beacoup pour mes projets, ici vous aurez un pétit apperçus de ce que j'ai deja eu à faire.
+               Comme vous pouvez le remarqué, j'opte pour la simplicité et l'éfficaté. 
+            </p>
+            <button onclick="hello()"> dites coucou </button>
+        </header>  
+        <section class="presentation-image">
+          <img src="images/1.jpg" alt="">
+        </section>
+        <section class="projects-section">
+            <h1>projets realises </h1>
+            <div class="projects">
+                <div class="project">
+                    <h4> algorithme de chiffrement </h4>
+                    <p class="description">
+                        j'ai mis sur pied un algorithme de chiffrement basé sur la methode de césar,
+                        pour cette algorithme il te faut avoir la clé de chiffrement pour déchiffrer le 
+                        message. pour ce projet j'ai utilisé le langage PHP et Javascript
+                    </p>
+                    <p class="dates">
+                        dates 2021-2022
+                    </p>
+                </div>
+                <div class="project">
+                    <h4> application de gestion d'une bibliotheque </h4>
+                    <p class="description">
+                       j'ai developpé une application web pour la gestion des livres d'une bibliothèque,
+                       ici on devais géré les liens entre auteurs, catégorie et année de publication des livres,
+                       pour ce projet j'ai utilisé le PHP,html,css,Js et MySql. 
+                    </p>
+                    <p class="dates">
+                        date 2022-2023
+                    </p>
+                </div>
+                <div class="project">
+                    <h4>application de méssagerie instantanée </h4>
+                    <p class="description">
+                        j'ai mis sur pied un systeme de méssagerie instantanée, pour cela je me suis inspiré 
+                        de messenger de meta, pour ce projet j'ai utilisé le PHP & MySql,html,css,JS, fonctionnalité :
+                        envois et receptions de messages.
+
+                    </p>
+                    <p class="dates">
+                        date 2022 - 2023
+                    </p>
+                </div>
+                <div class="project">
+                    <h4> administration réseau </h4>
+                    <p class="description">
+                       j'ai administré un réseau d'entreprise avec Windows Server, le but etait d'optimiser
+                       les echanges, la disponibilité des ressouces sur le réseau d'entreprise tout réduisant les 
+                       vulnérabilités  
+                    <p class="dates">
+                        date 2023-2024
+                    </p>
+                </div>
+                <div class="project">
+                    <h4> systeme de payement automatique en ligne</h4>
+                    <p class="description">
+                      depuis quelques années je travailles sur un systeme de payement en ligne qui sera moins couteux 
+                      voir même gratuit mais je travailles aussi sur beacoup de projets tant dans le developpement que 
+                      dans la cybersécurité
+                    </p>
+                    <p class="dates">
+                        date 2023-2025
+                    </p>
+                </div>
+            </div>
+        </section>
+    </section>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-left">
+            <p>&copy; 2025 pouokam pierre. Tous droits réservés.</p>
+          </div>
+          <div class="footer-right">
+            <a href="https://github.com/tonprofil" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/tonprofil" target="_blank">LinkedIn</a>
+            <a href="mailto:pouokampierre123@gmail.com">Email</a>
+          </div>
+        </div>
+      </footer>
+    <script>
+      const toggle = document.getElementById('menu-toggle');
+      const menu = document.getElementById('menu');
+      let isOpen = false;
+    
+      toggle.addEventListener('click', () => {
+        menu.classList.toggle('show');
+        isOpen = !isOpen;
+        toggle.innerHTML = isOpen ? '&times;' : '&#9776;';
+      });
+      function hello(){
+        alert("merci de visiter le portfolio de pouokam pierre");
+      }
+    </script>
+</body>
+</html>

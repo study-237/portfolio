@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon CV</title>
+    <link rel="stylesheet" href="style/cv.css">
+    <link rel="stylesheet" href="style/nav.css">
+    <link rel="stylesheet" href="style/footer.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+          <img src="images/moi.JPG" alt="Photo de profil" />
+          <span>pouokam pierre</span>
+        </div>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+        <div class="menu" id="menu">
+          <a href="index.html">Accueil</a>
+          <a href="cv.html">mon CV</a>
+          <a href="grid.html">mon grid photo</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+     <br><br>
+    <p class="title"> hello, ici est vous pouvez voir tout mon palmares </p>
+    <div class="container">
+        <div class="project-title">
+            programmeur en C
+        </div>
+        <div class="contains">
+            j'ai commencé par la programmation en C sur le site du zero (aujourd'hui appélé open classroom)
+            j'ai fait une année d'apprentissage du langage, durannt cette période j'ai été forcé d'apprendre 
+            l'algorithmique en paralèlle avec la programmation en C car il me fallait avoir une solide base en 
+            algorithmique pour mieux apprehender ce langage, durant cette periode j'ai resolu une multitude 
+            d'exercices en algorithmique et en programmation C mis sur pied par le site et j'ai realisé quelques 
+            programmmes personnels. presentement jsuis entrain de combler quelques de mes lacunes en C.
+            <p class="date"> du 01/01/2018 au 01/01/2019 </p>
+        </div>     
+       <div class="project-title">
+            developpeur frontend
+        </div>
+        <div class="contains">
+            j'ai aussi appris le develeppement web frontend sur le site du zéro mais pas seulement,
+            j'etudie sur plusieurs sites comme codingame,sololearn et plusieurs autres plateformes populaires 
+            pour l'apprentissage en ligne, je peux dire que sans me tromper que je suis dans le develeppement
+            web frontend depuis plus 5ans.
+            <p class="date"> du 01/01/2019 au 01/01/2021 </p>
+        </div>        
+        <div class="project-title">
+            developpeur backend
+        </div>
+        <div class="contains">
+            je suis dans le develeppement backend depuis plus de deux ans aujourd'hui, j'ai des solides 
+            bases en develeppement backend précisement avec les langages PHP et MySql, c'est un couple de 
+            langage très puissant, flexibles et robustes car plus 70% des sites du monde entier utilise 
+            cette technologie.
+            <p class="date"> du 01/01/2021 au 01/01/2023 </p>
+        </div>
+        <div class="project-title">
+            developpeur fullstack junior
+        </div>
+        <div class="contains">
+            j'ai fait plus de trois mois de stage dans l'entreprise INOV Cameroon,au cours du quel 
+            j'ai mis sur pied un site web de commande de taxi en ligne, durannt ce stage 
+            j'ai develeppé beacoup de competences en developpement backend et frontend
+            aujourd'hui je peux me considerer comme developpeur fullstack junior
+            <p class="date"> du 01/01/2023 au 01/04/2023 </p>
+        </div>
+        <div class="project-title">
+             stack actuel
+        </div>
+        <div class="contains">
+            presentement je suis en formations en cybersécurité et en IA, en ,même temps je travailles
+            sur plusieurs projets projets de develeppement et cybersécurité en paralèlle. en réalité, j'ai 
+            appris et je continue d'apprendre sur plusieurs grandes plateformes en ligne car ils mettent à disposition
+            des exercices et TP vraiment pratiques et concret, je trouves ça plutôt bien.
+            <p class="date"> du 01/04/2023 à aujourd'hui </p>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-left">
+            <p>&copy; 2025 pouokam pierre. Tous droits réservés.</p>
+          </div>
+          <div class="footer-right">
+            <a href="https://github.com/tonprofil" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/tonprofil" target="_blank">LinkedIn</a>
+            <a href="mailto:pouokampierre123@gmail.com">Email</a>
+          </div>
+        </div>
+      </footer>
+    <script>
+      const toggle = document.getElementById('menu-toggle');
+      const menu = document.getElementById('menu');
+      let isOpen = false;
+    
+      toggle.addEventListener('click', () => {
+        menu.classList.toggle('show');
+        isOpen = !isOpen;
+        toggle.innerHTML = isOpen ? '&times;' : '&#9776;';
+      });
+    </script>
+</body>
+</html>
